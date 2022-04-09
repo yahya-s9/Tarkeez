@@ -1,5 +1,5 @@
 # Tarkeez
-Productivity tool for muslim university students.
+Web App displaying the 5 muslim prayer times for any city in the world, architected with HTML5, CSS3, Node.JS / Javascript.
 
 Simple Demo: https://obscure-stream-89952.herokuapp.com
 
