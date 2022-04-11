@@ -26,7 +26,6 @@ app.get("/", function(req, res)
     CityKey: cityWithComma,
     CountryKey: country,
     fajrKey: fajr,
-    sunriseKey: sunrise,
     dhuhrKey: dhuhr,
     asrKey: asr,
     maghribKey: maghrib,
@@ -56,7 +55,6 @@ app.post("/", function(req, res){
 
       // collect prayer times from apiData
       fajr = apiData.data.timings.Fajr;
-      sunrise = apiData.data.timings.Sunrise;
       dhuhr = apiData.data.timings.Dhuhr;
       asr = apiData.data.timings.Asr;
       maghrib = apiData.data.timings.Maghrib;
