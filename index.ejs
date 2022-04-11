@@ -1,0 +1,109 @@
+<%- include("header") -%>
+  <div class="container-fluid">
+
+    <!-- begin navbar -->
+    <div class="row">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a href="https://obscure-stream-89952.herokuapp.com" class="navbar-brand"
+      style="font-size:1.5rem;">
+        <!-- <img src="moon.jpg" width="30" height="24"
+        class="d-inline-block"/> -->
+         🌙  Prayer Time Retriever</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#toggleMobileMenu"
+        aria-controls="toggleMobileMenu"
+        aria-expanded="false"
+        aria-lable="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="toggleMobileMenu">
+        <ul class="navbar-nav text-center ms-auto">
+          <li>
+            <a class="nav-link" href="https://github.com/yahya-s9/Tarkeez"> Source Code </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+    <!-- end navbar row -->
+
+    <!-- begin about row -->
+    <div class="row aboutSection">
+      <div class="col ">
+         Each of the 5 daily prayers for Muslims has a specific window of time in which it must be completed.
+         These timings are based upon your location on earth.
+         This website uses the Al-Adhan API to find the prayer times for
+         anywhere in the world!
+      </div> <!-- end about column -->
+    </div>
+    <!-- end about row -->
+
+    <!-- begin label row -->
+    <div class="row labelRow">
+      <div class="col labelcol">
+        Display Ṣalāh Times for <%=CityKey%> <%=CountryKey%> ...
+      </div>
+    </div>
+    <!-- end label row -->
+
+    <!-- begin prayers row -->
+    <div class="row prayersRow">
+      <div class="col timeBox">
+        fajr <br>
+        <%=fajrKey%>
+      </div>
+      <div class="col timeBox">
+        ẓuhr <br>
+        <%=dhuhrKey%>
+      </div>
+      <div class="col timeBox">
+        ʿaṣr <br>
+        <%=asrKey%>
+      </div>
+      <div class="col timeBox">
+        maġrib <br>
+        <%=maghribKey%>
+      </div>
+      <div class="col timeBox">
+        išāʾ <br>
+        <%=ishaKey%>
+      </div>
+    </div>
+    <!-- end prayers row -->
+
+    <!-- begin form -->
+    <form action="/" method="post">
+
+      <!-- begin form row -->
+      <div class="row formrow">
+        <div class="col">
+          <label> City </label>
+          <input class= "form-control" type="text" name="citySubmission" placeholder="(Ex: San Diego)">
+        </div>
+        <div class="col">
+          <label> Country  </label>
+          <input class= "form-control" type="text" name="countrySubmission" placeholder="(Ex: USA)">
+        </div>
+      </div>
+      <!-- end form row -->
+
+      <div class="row buttonrow">
+        <button class="btn-warning" type="submit" name="list">Search</button>
+      </div>
+
+    </form>
+    <!-- end form  -->
+
+  </div> <!-- end fluid container -->
+<%- include("footer") -%>
+
+<!-- To make a change, go into root directory and type in...
+
+git add .
+git commit -m "ur message"
+git push heroku master -->
