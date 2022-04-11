@@ -5,7 +5,7 @@ Web App displaying the 5 muslim prayer times for any city in the world, architec
 "App.js" contains the logic for the API endpoints <br>
 "index.ejs" contains the logic behind the user interface.
 
-Simple Demo: https://obscure-stream-89952.herokuapp.com
+Live Website: https://obscure-stream-89952.herokuapp.com
 
 Future features:
 - Integrating Google Calendar
