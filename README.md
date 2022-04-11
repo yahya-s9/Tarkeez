@@ -1,4 +1,4 @@
-# Tarkeez
+# "Tarkeez" Prayer Time Retriever
 
 Web App displaying the 5 muslim prayer times for any city in the world, architected with HTML5, CSS3 and Node.JS to interface with the Al-Adhan API. The web app is responsive to any screen size using Bootstrap.
 
